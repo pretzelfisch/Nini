@@ -1,0 +1,5 @@
+C:\SkyDrive\Development\MicroFisch\Nini\Bin\DotNet\1.0\Debug\Nini.dll
+C:\SkyDrive\Development\MicroFisch\Nini\Bin\DotNet\1.0\Debug\Nini.pdb
+C:\SkyDrive\Development\MicroFisch\Nini\Source\obj\Debug\Nini.csprojResolveAssemblyReference.cache
+C:\SkyDrive\Development\MicroFisch\Nini\Source\obj\Debug\Nini.dll
+C:\SkyDrive\Development\MicroFisch\Nini\Source\obj\Debug\Nini.pdb
