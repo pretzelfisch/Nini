@@ -118,6 +118,9 @@ namespace Nini.Config
 		public string Get (string key, string defaultValue)
 		{
 			string result = Get (key);
+
+            if ( String.IsNullOrWhiteSpace ( result ) )
+                result = null;
 			
 			return (result == null) ? defaultValue : result;
 		}
@@ -144,6 +147,9 @@ namespace Nini.Config
 		public int GetInt (string key)
 		{
 			string text = Get (key);
+
+            if ( String.IsNullOrWhiteSpace ( text ) )
+                text = null;
 			
 			if (text == null) {
 				throw new ArgumentException ("Value not found: " + key);
@@ -160,7 +166,11 @@ namespace Nini.Config
 			}
 
 			string result = Get (key);
-			
+
+
+            if ( String.IsNullOrWhiteSpace ( result ) )
+                result = null;
+
 			if (result == null) {
 				throw new ArgumentException ("Value not found: " + key);
 			}
@@ -172,6 +182,9 @@ namespace Nini.Config
 		public int GetInt (string key, int defaultValue)
 		{
 			string result = Get (key);
+
+            if ( String.IsNullOrWhiteSpace ( result ) )
+                result = null;
 			
 			return (result == null)
 					? defaultValue
@@ -184,8 +197,11 @@ namespace Nini.Config
 			if (!fromAlias) {
 				return GetInt (key, defaultValue);
 			}
-
-			string result = Get (key);
+			
+            string result = Get (key);
+            
+            if ( String.IsNullOrWhiteSpace ( result ) )
+                result = null;
 			
 			return (result == null) ? defaultValue : GetIntAlias (key, result);
 		}
@@ -194,6 +210,9 @@ namespace Nini.Config
 		public long GetLong (string key)
 		{
 			string text = Get (key);
+
+            if ( String.IsNullOrWhiteSpace ( text ) )
+                text = null;
 			
 			if (text == null) {
 				throw new ArgumentException ("Value not found: " + key);
@@ -206,6 +225,9 @@ namespace Nini.Config
 		public long GetLong (string key, long defaultValue)
 		{
 			string result = Get (key);
+
+            if ( String.IsNullOrWhiteSpace ( result ) )
+                result = null;
 			
 			return (result == null)
 					? defaultValue
@@ -216,7 +238,10 @@ namespace Nini.Config
 		public bool GetBoolean (string key)
 		{
 			string text = Get (key);
-			
+
+            if ( String.IsNullOrWhiteSpace ( text ) )
+                text = null;
+
 			if (text == null) {
 				throw new ArgumentException ("Value not found: " + key);
 			}
@@ -228,7 +253,10 @@ namespace Nini.Config
 		public bool GetBoolean (string key, bool defaultValue)
 		{
 			string text = Get (key);
-			
+
+            if ( String.IsNullOrWhiteSpace ( text ) )
+                text = null;
+
 			return (text == null) ? defaultValue : GetBooleanAlias (text);
 		}
 		
@@ -236,7 +264,10 @@ namespace Nini.Config
 		public float GetFloat (string key)
 		{
 			string text = Get (key);
-			
+
+            if ( String.IsNullOrWhiteSpace ( text ) )
+                text = null;
+
 			if (text == null) {
 				throw new ArgumentException ("Value not found: " + key);
 			}
@@ -248,6 +279,9 @@ namespace Nini.Config
 		public float GetFloat (string key, float defaultValue)
 		{
 			string result = Get (key);
+
+            if ( String.IsNullOrWhiteSpace ( result ) )
+                result = null;
 			
 			return (result == null)
 					? defaultValue
@@ -270,6 +304,9 @@ namespace Nini.Config
 		public double GetDouble (string key, double defaultValue)
 		{
 			string result = Get (key);
+
+            if ( String.IsNullOrWhiteSpace ( result ) )
+                result = null;
 			
 			return (result == null)
 					? defaultValue

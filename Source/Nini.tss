@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>Nini</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SkyDrive\Development\MicroFisch\Nini\Source\Ini\IniSection.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SkyDrive\Development\MicroFisch\Nini\Source\Config\ConfigBase.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>NiniTest</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SkyDrive\Development\MicroFisch\Nini\Source\Test\Util\OrderedListTests.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SkyDrive\Development\MicroFisch\Nini\Source\Test\Config\ArgvConfigSourceTests.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SkyDrive\Development\MicroFisch\Nini\Source\Test\Config\ConfigBaseTests.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SkyDrive\Development\MicroFisch\Nini\Source\Config\IConfig.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

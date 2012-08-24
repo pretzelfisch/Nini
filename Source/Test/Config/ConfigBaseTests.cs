@@ -111,7 +111,7 @@ namespace Nini.Test.Config
 									(new StringReader (writer.ToString ()));
 			IConfig config = source.Configs["Test"];
 			
-			Assert.AreEqual (494.59, config.GetFloat ("value 1"));
+			Assert.AreEqual ((float)494.59, config.GetFloat ("value 1"));
 			Assert.AreEqual ((float)5656.2853, 
 							config.GetFloat ("Not Here", (float)5656.2853));
 		}
